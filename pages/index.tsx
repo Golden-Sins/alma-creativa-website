@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { Menu, X, Monitor, Cpu, Code, Mail, Phone, MapPin, Send, Zap, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
   name: string;
@@ -21,11 +22,36 @@ export default function Home() {
   });
   const [formStatus, setFormStatus] = useState('');
 
-  const handleSubmit = () => {
-    setFormStatus('Thank you! We will contact you soon.');
-    setTimeout(() => setFormStatus(''), 5000);
+const handleSubmit = () => {
+  // Validation
+  if (!formData.name || !formData.email || !formData.message) {
+    setFormStatus('❌ Please fill in all required fields');
+    return;
+  }
+
+  setFormStatus('📤 Sending...');
+  
+  emailjs.send(
+    'service_yrennhv',      // Replace with YOUR Service ID
+    'template_0ol3suv',     // Replace with YOUR Template ID
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone || 'Not provided',
+      service: formData.service,
+      message: formData.message,
+    },
+    'WlY19164ZHXNk11Mu'        // Replace with YOUR Public Key
+  )
+  .then(() => {
+    setFormStatus('✅ Message sent! I will contact you within 24 hours.');
     setFormData({ name: '', email: '', phone: '', service: 'gaming', message: '' });
-  };
+  })
+  .catch((error) => {
+    console.error('EmailJS Error:', error);
+    setFormStatus('❌ Failed to send. Please email me directly at valtersupenieks@gmail.com');
+  });
+};
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

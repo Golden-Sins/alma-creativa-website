@@ -82,7 +82,7 @@ const handleSubmit = () => {
                   <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-orange-400 rounded-full animate-pulse"></div>
                 </div>
                 <div>
-                  <div className="text-white font-bold text-lg">Alma Creativa del Mar</div>
+                  <div className="text-white font-bold text-lg">V-Tech Bay</div>
                   <div className="text-cyan-300 text-xs">Tech Solutions Tenerife</div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const handleSubmit = () => {
             <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-orange-400 bg-clip-text text-transparent">
-                  Alma Creativa del Mar
+                  V-Tech Bay
                 </span>
               </h1>
               <p className="text-2xl md:text-3xl text-gray-300 mb-4">Premium Tech Solutions in Tenerife</p>
@@ -207,7 +207,7 @@ const handleSubmit = () => {
 
             {/* Why Choose Us */}
             <div className="mt-16 bg-gradient-to-r from-cyan-900/30 to-blue-900/30 rounded-xl p-8 border border-cyan-500/20">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">Why Choose Alma Creativa del Mar?</h3>
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Why Choose V-Tech Bay?</h3>
               <div className="grid md:grid-cols-2 gap-6 text-gray-300">
                 {/* Feature 1 */}
                 <div className="flex items-start space-x-3">
@@ -399,7 +399,7 @@ const handleSubmit = () => {
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-orange-500/20">
           <div className="max-w-7xl mx-auto text-center text-gray-400">
-            <p className="mb-2">© 2025 Alma Creativa del Mar SL - All rights reserved</p>
+            <p className="mb-2">© 2025 V-Tech Bay SL - All rights reserved</p>
             <p className="text-sm">Premium Tech Solutions in Tenerife, Spain</p>
           </div>
         </footer>

@@ -388,7 +388,6 @@ const handleSubmit = () => {
                   )}
                   {/* Note */}
                   <div className="text-center text-gray-500 text-xs mt-2">
-                    Demo form - Connect to EmailJS to enable
                   </div>
                 </div>
               </div>

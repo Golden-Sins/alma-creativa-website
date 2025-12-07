@@ -64,8 +64,8 @@ const handleSubmit = () => {
   return (
     <>
       <Head>
-        <title>Alma Creativa del Mar - Tech Solutions Tenerife</title>
-        <meta name="description" content="Premium tech solutions in Tenerife. Gaming PCs, Business Integration, Developer Support." />
+        <title>V-Tech Bay - Tech Solutions Tenerife</title>
+        <meta name="description" content="Premium tech solutions in Tenerife. Gaming PCs and PCs, Business Integration, Developer Support." />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
